@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/XavierCarty95/netninjatodolist/issues"
   },
-  "homepage": "https://github.com/XavierCarty95/netninjatodolist#readme"
+  "homepage": "https://github.com/XavierCarty95/netninjatodolist#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
