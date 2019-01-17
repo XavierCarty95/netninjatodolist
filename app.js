@@ -1,5 +1,5 @@
-var express = require("express")
-var todoController = require("./controllers/todoController");
+var express = require("express");
+var todoController = require("./controllers/todoControllers");
 
 var app = express();
 
@@ -7,7 +7,11 @@ var app = express();
 app.set("view engine", "ejs");
 
 //static files
-app.use(express.static("./public"));
+////Didn't work as NN listed
+// app.use(express.static("./public"));
+app.use('/public', express.static('public'));
+
+
 
 //fire controllers
 todoController(app);
@@ -16,3 +20,4 @@ todoController(app);
 app.listen(8080);
 
 console.log("You are listening to port 8080");
+
